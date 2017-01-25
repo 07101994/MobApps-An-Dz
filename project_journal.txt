@@ -1,0 +1,12 @@
+YYYY=2017
+Dates format: MM-DD
+
+01-17
+Install Windows toolkit
+Clone https://github.com/kudan-eu/Simple-Samples-Android
+Download the Android KudanAR framework
+Install Android Studio
+
+01-24
+Created a new project in Android Studio https://wiki.kudan.eu/Getting_started
+and stuck at step 8. Reason: no experience with Android Studio.
