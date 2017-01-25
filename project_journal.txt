@@ -10,3 +10,6 @@ Install Android Studio
 01-24
 Created a new project in Android Studio https://wiki.kudan.eu/Getting_started
 and stuck at step 8. Reason: no experience with Android Studio.
+
+01-25
+Meeting with professor. Approved to choose a marker-based AR topic.
