@@ -1,11 +1,19 @@
 NEW TOPIC: MARKER-BASED AR
-Case study: Computer-Assisted Authoring of Interactive Narratives
+	Case study: Computer-Assisted Authoring of Interactive Narratives
 https://www.disneyresearch.com/publication/computer-assisted-authoring-of-interactive-narratives/
+
+	Paper:
+https://s3-us-west-1.amazonaws.com/disneyresearch/wp-content/uploads/20150223183724/Computer-Assisted-Authoring-of-Interactive-Narratives-Paper.pdf
+
+	Tools:
 
 ARToolKit Tutorial 3: Multi-Marker Tracking
 http://www.hitl.washington.edu/artoolkit/documentation/tutorialmulti.htm#multimarkers
 
 Steering Behaviors For Autonomous Characters 	http://www.red3d.com/cwr/steer/
+
+	Tutorials:
+https://www.raywenderlich.com/40870/augmented-reality-ios-tutorial-marker-tracking
 
 
 

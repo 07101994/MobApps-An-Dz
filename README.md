@@ -1,7 +1,6 @@
 # MobApps-An-Dz
 a group project. Team: Aleksandr, Lloyd
-NEW TOPIC: Marker-based AR.
-Paper: To be added later.
+NEW TOPIC: Marker-based AR (see links.md for details)
 
 OLD TOPIC:
 Paper: Adaptable Model-based Tracking Using Analysis-by-Synthesis Techniques
