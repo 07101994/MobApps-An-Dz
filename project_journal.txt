@@ -21,4 +21,10 @@ Aleksandr:
 	Created Apple ID
 	Installed Unity
 	Signed up for Vuforia Developer
-	Created the Unity project: aMBAR
+	Created the Unity project: AMBAR
+	
+03-27, 03-28
+Aleksandr: 
+	Created the first simple prototype
+	Tested on Android smartphone
+	Made commits to Github

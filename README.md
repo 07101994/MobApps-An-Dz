@@ -1,7 +1,7 @@
 # MobApps-An-Dz
 a group project. Team: Aleksandr, Lloyd
 
-NEW TOPIC: a MARKER-BASED AR application (aMBAR)
+NEW TOPIC: "Android Marker-Based AR" (AMBAR) mobile application.
   Inspired by a case study: Computer-Assisted Authoring of Interactive Narratives
   https://www.disneyresearch.com/publication/computer-assisted-authoring-of-interactive-narratives/
 
