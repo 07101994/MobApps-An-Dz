@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HorseA_Script : MonoBehaviour
 {
-	private float moveIncrX = 0.02f, //   x: [+towards the right side of QR code, -towards the left] 
-		moveIncrZ = 0.02f;
+	private float moveIncrX = 0.0625f, //   x: [+towards the right side of QR code, -towards the left] 
+		moveIncrZ = 0.0625f;
 	//	z: [-left, +right]
 
 	//@params x, y, z

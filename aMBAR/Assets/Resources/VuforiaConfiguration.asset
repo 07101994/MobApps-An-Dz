@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: ARN9NqL/////AAAAGWGqgVG8lUnxhZZnU3SX/ScKFlrlsA4Ml/Li9ndgPvwPE0MQp9WNFlWmr1ubonw6j67081tnGcuTjDZdbocPVTu2SYnqrOVbXyJy41us+ppykUoier/tPQ9Tk/Fgb0F0r89zaX+FIt3eoyVeovkYhOxHTOZTv+lZWpCl7uyQycJDwSn17PQgc9pGvl7G2Vf9ROghhpDGA1wxm98SUuiA4br6MIp9qisPZU3YAHwczPw4JAurUJNyYUh7wJ+4r6KAsDGoNQD3d1/qTdcPlqG4iCiZ4WSmNaMJI/1NiDJ3Dle4BCggnVqKE/3j06HF9nW4UmzIkv0R6mOSpLfRORVNCOtdEsnyhEncfCq3hSv+WUPS
-    delayedInitialization: 1
-    cameraDeviceModeSetting: -1
+    delayedInitialization: 0
+    cameraDeviceModeSetting: -3
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
