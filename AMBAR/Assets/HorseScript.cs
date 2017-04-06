@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class HorseScript : MonoBehaviour
 {
+	GameObject pathGO;	//foodGO;
+	Transform targetPathNode;
+
+	//string foodObjectName = "Apple";
 	private float moveIncrX = 0.0625f, //   x: [+towards the right side of QR code, -towards the left] 
 		moveIncrZ = 0.0625f;
 	//	z: [-left, +right]
@@ -14,7 +18,11 @@ public class HorseScript : MonoBehaviour
 	void Start ()
 	{
 		horsePos = transform.position;
-		
+		pathGO = GameObject.Find ("Apple");
+	}
+	void GetNextPathNode(){
+		targetPathNode = pathGO.transform;
+		Debug.Log (targetPathNode);
 	}
 	
 	// Update is called once per frame
