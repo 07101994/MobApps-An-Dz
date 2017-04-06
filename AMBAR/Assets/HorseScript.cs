@@ -21,8 +21,8 @@ public class HorseScript : MonoBehaviour
 		pathGO = GameObject.Find ("Apple");
 	}
 	void GetNextPathNode(){
-		targetPathNode = pathGO.transform;
-		Debug.Log (targetPathNode);
+		//targetPathNode = pathGO.transform;
+		//Debug.Log (targetPathNode);
 	}
 	
 	// Update is called once per frame
