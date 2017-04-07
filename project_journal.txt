@@ -1,30 +1,43 @@
-YYYY=2017
+Year=2017
 Dates format: MM-DD
 
-01-17 
-Aleksandr: 
-	Installed Windows toolkit
-	Cloned https://github.com/kudan-eu/Simple-Samples-Android
-	Downloaded the Android KudanAR framework
-	Installed Android Studio
+01-17		author: Aleksandr
+old topic: Installed Kudan toolkit for Windows
+Cloned https://github.com/kudan-eu/Simple-Samples-Android
+Downloaded the Android KudanAR framework
+Installed Android Studio
 
-01-24
-Aleksandr: 
-	Created a new project in Android Studio https://wiki.kudan.eu/Getting_started
+01-20		author: Aleksandr
+worked on the project 11:00 – 12:30 and 13:30 – 17:45
+
+01-24		author: Aleksandr
+old topic: Created a new project in Android Studio https://wiki.kudan.eu/Getting_started
 and stuck at step 8. Reason: no experience with Android Studio.
 
 01-25
-Meeting with professor. Approved to choose a marker-based AR topic.
+Meeting with professor. Approved to choose a new topic: marker-based AR.
 
-03-20
-Aleksandr: 
-	Created Apple ID
-	Installed Unity
-	Signed up for Vuforia Developer
-	Created the Unity project: AMBAR
+03-20		author: Aleksandr
+Created Apple ID
+Installed Unity
+Signed up for Vuforia Developer
+Created the Unity project: AMBAR
 	
-03-27, 03-28
-Aleksandr: 
-	Created the first simple prototype
-	Tested on Android smartphone
-	Made commits to Github
+03-28	author: Aleksandr
+Created the first simple prototype
+Tested on Android smartphone
+Made commits to Github
+Hours worked 10:30 – 11:30, 14:00 – 15:45, 21:00 – 22:30
+
+04-04	author: Aleksandr
+teamwork 11:00 – 13:30
+
+05-04	author: Aleksandr
+Created and printed QR-codes for horse and apple markers.
+teamwork 10:00 – 11:30, 12:00 – 13:30
+
+06-04	author: Aleksandr
+Encountered a problem in Unity: no video feed from the camera. Updated Unity, didn't solve. Found a solution by deleting AR Camera prefab and adding it again.
+Added a Quit button. Tested the app on my smartphone.
+Figured out how to make the horse model textured, not pink-coloured as before.
+Hours worked: 11:45 – 12:45, 14:30 – 15:30
