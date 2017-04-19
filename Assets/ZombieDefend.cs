@@ -12,18 +12,13 @@ public class ZombieDefend : MonoBehaviour {
 
 	public GameObject Target;
 
-	public float speed = 0.5f;
+	//public float speed = 0.5f;
 
-	public float distance;
-
-	public float maxDistance = 1.0f;
-
-	public float damage = 100;
-
-
+	private float distance;
+	private float maxDistance = 1.0f;
+	private float damage = 100;
 
 	GameObject[] enemies;
-
 
 	void Start()
 	{
@@ -98,7 +93,8 @@ public class ZombieDefend : MonoBehaviour {
 		//transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, Time.deltaTime * speed);
 
 		//find distance to target
-		distance = Vector3.Distance(transform.position, Target.transform.position);
+		//Todo: execute this only if a Zombie object wasn't destroyed
+		distance = Vector3.Distance(transform.position, Target.transform.position); 
 
 		//Debug.Log (distance);
 

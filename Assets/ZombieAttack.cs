@@ -6,10 +6,10 @@ public class ZombieAttack : MonoBehaviour {
 
 
 	public Transform mytarget;
-	private GameObject zombie;
+	public GameObject zombie;
 
 
-	public float speed = 0.5f;
+	private float speed = 0.5f;
 
 
 	//public float health = 100f;
