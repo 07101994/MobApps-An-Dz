@@ -12,9 +12,9 @@ public class Zombie:MonoBehaviour {
 
   // Use this for initialization
   void Start() {
-    speed = 0.5f;
+    speed = 0.2f;
     stopRange = 1f;
-    anim = this.GetComponent<Animation>();
+    anim = GetComponent<Animation>();
     //TODO: start moving only if the marker has been seen
     anim.Play();  //animate zombie walking
 		  //zombie = GameObject.FindWithTag ("enemies");
@@ -22,6 +22,10 @@ public class Zombie:MonoBehaviour {
 
   // Update is called once per frame
   void Update() {
+    //zombieMove();    
+  }
+
+  private void zombieMove() {
     if (transform.position != Spartan.position) {
       //makes Zombie move towards the Spartan
       transform.position = Vector3.MoveTowards(transform.position, Spartan.position, Time.deltaTime * speed);
@@ -30,8 +34,6 @@ public class Zombie:MonoBehaviour {
       //  Debug.Log("standing near the Spartan");
       this.GetComponent<Animation>().Stop();
     }
-    
-
     //Destroy (gameObject);
   }
 }
