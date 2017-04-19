@@ -1,4 +1,6 @@
 .DS_Store
+Assets/Plugins/*
+/Assets/Plugins/*
 
 # =============== #
 # Unity generated #
