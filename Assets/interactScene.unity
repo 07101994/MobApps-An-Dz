@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a768f32a5e54a8e8d33fde7941149f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mytarget: {fileID: 1788578406}
+  king: {fileID: 1788578406}
   zombie: {fileID: 0}
 --- !u!1001 &1532116861
 Prefab:

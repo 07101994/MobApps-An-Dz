@@ -23,7 +23,7 @@ public class ZombieAttack : MonoBehaviour
 		//TODO: start moving only if the marker has been seen
 
 		//zombie = GameObject.FindWithTag ("enemies");
-		//mytarget = GameObject.FindWithTag ("warrior");
+		//king = GameObject.FindWithTag ("warrior");
 		
 	}
 	
