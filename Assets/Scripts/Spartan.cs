@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ZombieDefend : MonoBehaviour {
+public class Spartan : MonoBehaviour {
 
 
 	private Vector3 normalizeDirection;
