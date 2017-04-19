@@ -23,3 +23,6 @@ sysinfo.txt
 *.unityproj
 *.booproj
 .idea*/
+
+# ============================================= #
+ambar/Assets/Plugins/
