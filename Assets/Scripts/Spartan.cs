@@ -47,13 +47,14 @@ public class Spartan:MonoBehaviour {
     return bestTarget;
   }
 
-  void ApplyDamage(float damage) {
-    print(damage);
-  }
+  //void ApplyDamage(float damage) {
+  //  //print(damage);
+  //  spartan.GetComponent<Animation>().Play("attack");
+  //}
 
   void Update() {
     //find target with tag
-    zombie = ClosestZombie();
+    //zombie = ClosestZombie();
 
     //find distance to target
     //Todo: execute this only if a Zombie object wasn't destroyed
@@ -64,7 +65,7 @@ public class Spartan:MonoBehaviour {
     if (distance < maxDistance) {
 
       //send message to targets script
-      zombie.SendMessage("ApplyDamage", damage);	//Aleksandr: SendMessage ApplyDamage has no receiver!
+      //zombie.SendMessage("ApplyDamage", damage);	//Aleksandr: SendMessage ApplyDamage has no receiver!
       spartan.GetComponent<Animation>().Play("attack");
     }
   }
