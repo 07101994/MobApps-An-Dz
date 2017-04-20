@@ -8,14 +8,18 @@ using UnityEngine;
 public class Spartan:MonoBehaviour {
   public GameObject spartan, zombie;  //renamed Target to zombie
   private Vector3 normalizeDirection;
-  private float distance, attackRange = 0.05f, damage = 100.0f;
+  private float distance, attackRange = 0.2f, damage = 5.0f;
   public float health = 100.0f;
   private GameObject[] enemies;
+  Zombie zm;  // store Zombie class to access its methods
 
   void Start() {
     //zombie = GameObject.FindGameObjectsWithTag ("enemies");
     zombie = GameObject.Find("Zombie1");
     spartan = GameObject.Find("Spartan");
+    zm = new Zombie();
+
+    Debug.Log(zombie);
 
     //normalizeDirection = (target.position - transform.position).normalized;
 
@@ -54,16 +58,27 @@ public class Spartan:MonoBehaviour {
 
     //find distance to target
     //Todo: execute this only if a Zombie object wasn't destroyed
-    distance = Vector3.Distance(transform.position, zombie.transform.position);
- 
 
-    //if within damaging range
-    if (distance < attackRange) {
-
-      //send message to targets script
-      //zombie.SendMessage("ApplyDamage", damage);	//Aleksandr: SendMessage ApplyDamage has no receiver!
-      zombie.GetComponent<Animation>().Stop();
-      spartan.GetComponent<Animation>().Play("attack");
+    if (zombie != null) {
+      distance = Vector3.Distance(transform.position, zombie.transform.position);
+      //Debug.Log("distance " + distance + " attackRange " + attackRange);
+      //if within damaging range and zombie is there
+      if (distance < attackRange) {
+	//send message to targets script
+	//zombie.SendMessage("ApplyDamage", damage);	//Aleksandr: SendMessage ApplyDamage has no receiver!
+	//zombie.GetComponent<Animation>().Stop();
+	if (zombie != null) {
+	  Debug.Log("Attack!");
+	  spartan.GetComponent<Animation>().Play("attack");
+	  zm.LoseHealth(damage);
+	  Debug.Log("ZOMBIE HP:" + zm.getHealth());
+	}
+      }
+    }
+    else {
+      Debug.Log("no zombie");
+      spartan.GetComponent<Animation>().Stop();
+      return;
     }
   }
 }
