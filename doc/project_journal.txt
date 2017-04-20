@@ -1,6 +1,11 @@
 Year=2017
 Dates format: MM-DD
 
+Tasks distribution:
+Lloyd - found solutions to animate/move model
+Aleksandr - created markers, set up scene, created quit button
+Together - C# scripts programming
+
 01-17		author: Aleksandr
 old topic: Installed Kudan toolkit for Windows
 Cloned https://github.com/kudan-eu/Simple-Samples-Android
@@ -41,3 +46,10 @@ Encountered a problem in Unity: no video feed from the camera. Updated Unity, di
 Added a Quit button. Tested the app on my smartphone.
 Figured out how to make the horse model textured, not pink-coloured as before.
 Hours worked: 11:45 – 12:45, 14:30 – 15:30
+
+19-04
+Lloyd spent several days trying to move/animate the horse, had to use other 3D models.
+Aleksandr: hours worked: 10:00 – 12:00, 12:30 – 15:00, 17:30 – 18:30, 19:45 – 22:00, 22:30 – 00:00	
+
+20-04
+Aleksandr: hours worked 00:30 – 04:00, 11:30 – 13:00
