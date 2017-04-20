@@ -9,12 +9,15 @@ using Vuforia;
 public class Zombie:MonoBehaviour {
   public Transform Spartan;     //Spartan King object
   public GameObject zombie;     //Zombie object
-  public float speed = 0.2f, health = 100f,  //Zombie moving speed and health
-	  stopRange = 0.05f;            // at this range zombie will stop moving and begin attacks
+  public float speed;
+  public float health = 100f;  //Zombie moving speed and health
+  public float attackRange;            // at this range zombie will stop moving and begin attacks
   private Animation anim;       //Zombie object's animation
 
   // Use this for initialization
   void Start() {
+    speed = 0.04f;
+    attackRange = 0.05f;
     anim = GetComponent<Animation>();
     //TODO: start moving only if the marker has been seen
     anim.Play();  //animate zombie walking
@@ -37,15 +40,15 @@ public class Zombie:MonoBehaviour {
   }
 
   public void zombieMove() {
-    float dist;
-    dist = Vector3.Distance(transform.position, Spartan.transform.position);
-    Debug.Log("DIST=" + dist + ", STOP=" + stopRange);
-    if (dist >= stopRange) {
-      //move in a straight line towards the Spartan
+    float dist = Vector3.Distance(transform.position, Spartan.position);
+    Debug.Log("dist " + dist + "range " + attackRange);
+    //if (transform.position != Spartan.position)
+      if (dist > attackRange) {
+      //makes Zombie move towards the Spartan
       transform.position = Vector3.MoveTowards(transform.position, Spartan.position, Time.deltaTime * speed);
     }
     else {
-      //  Debug.Log("standing near the Spartan");
+      Debug.Log("standing near the Spartan");
       this.GetComponent<Animation>().Stop();
     }
   }

@@ -8,7 +8,7 @@ using UnityEngine;
 public class Spartan:MonoBehaviour {
   public GameObject spartan, zombie;  //renamed Target to zombie
   private Vector3 normalizeDirection;
-  private float distance, maxDistance = 0.05f, damage = 100.0f;
+  private float distance, attackRange = 0.05f, damage = 100.0f;
   public float health = 100.0f;
   private GameObject[] enemies;
 
@@ -58,7 +58,7 @@ public class Spartan:MonoBehaviour {
  
 
     //if within damaging range
-    if (distance < maxDistance) {
+    if (distance < attackRange) {
 
       //send message to targets script
       //zombie.SendMessage("ApplyDamage", damage);	//Aleksandr: SendMessage ApplyDamage has no receiver!
