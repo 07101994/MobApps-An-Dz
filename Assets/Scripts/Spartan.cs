@@ -55,13 +55,14 @@ public class Spartan:MonoBehaviour {
     //find distance to target
     //Todo: execute this only if a Zombie object wasn't destroyed
     distance = Vector3.Distance(transform.position, zombie.transform.position);
-    Debug.Log (distance);
+ 
 
     //if within damaging range
     if (distance < maxDistance) {
 
       //send message to targets script
       //zombie.SendMessage("ApplyDamage", damage);	//Aleksandr: SendMessage ApplyDamage has no receiver!
+      zombie.GetComponent<Animation>().Stop();
       spartan.GetComponent<Animation>().Play("attack");
     }
   }
