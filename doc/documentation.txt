@@ -1,0 +1,19 @@
+
+"Android Marker-Based Augmented Reality" (AMBAR) mobile application.
+	Team: Aleksandr Anfilov, Lloyd Dzokoto
+		WiSe 2017
+
+  Point smartphone camera to a game field with QR-codes (markers)
+to see a 3D model of a Spartan guarding his area against a Zombie.
+
+ Tools used: 
+ - online website to create QR-codes				https://www.qrcode-monkey.com/
+ - Unity							https://unity3d.com/
+ - Vuforia 6.2 for targets/markers database (free account)
+ - Vuforia SDK for Unity: AR Camera, Image Target prefabs	https://developer.vuforia.com/downloads/sdk
+ - old smartphone with Android  4.1 (HTC One S, released in 2013)
+ - Github
+ - Microsoft Visual Studio for C# script development
+ - Unity Asset store to download free 3D models, Spartan http://u3d.as/2cq and Zombie http://u3d.as/bFW
+
+ Hours spent: see project journal

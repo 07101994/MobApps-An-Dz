@@ -16,7 +16,7 @@ public class Zombie:MonoBehaviour {
 
   // Use this for initialization
   void Start() {
-    speed = 0.04f;
+    speed = 0.02f;
     attackRange = 0.05f;
     anim = GetComponent<Animation>();
     //TODO: start moving only if the marker has been seen
@@ -41,14 +41,14 @@ public class Zombie:MonoBehaviour {
 
   public void zombieMove() {
     float dist = Vector3.Distance(transform.position, Spartan.position);
-    Debug.Log("dist " + dist + "range " + attackRange);
+    //Debug.Log("dist " + dist + "range " + attackRange);
     //if (transform.position != Spartan.position)
       if (dist > attackRange) {
       //makes Zombie move towards the Spartan
       transform.position = Vector3.MoveTowards(transform.position, Spartan.position, Time.deltaTime * speed);
     }
     else {
-      Debug.Log("standing near the Spartan");
+      //Debug.Log("standing near the Spartan");
       this.GetComponent<Animation>().Stop();
     }
   }

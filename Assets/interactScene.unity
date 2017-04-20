@@ -484,6 +484,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Spartan: {fileID: 1591275658}
   zombie: {fileID: 0}
+  speed: 0
+  health: 0
+  attackRange: 0
 --- !u!114 &1194684821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +581,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400084, guid: 608191cf3aeaa85419bb4558fccb064b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.43
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 608191cf3aeaa85419bb4558fccb064b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -586,7 +589,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 608191cf3aeaa85419bb4558fccb064b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.283
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 608191cf3aeaa85419bb4558fccb064b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -659,7 +662,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spartan: {fileID: 0}
-  Target: {fileID: 0}
+  zombie: {fileID: 0}
+  health: 100
 --- !u!4 &1591275658 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400084, guid: 608191cf3aeaa85419bb4558fccb064b, type: 3}
