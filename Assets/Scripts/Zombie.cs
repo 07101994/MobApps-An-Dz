@@ -50,7 +50,8 @@ public class Zombie:MonoBehaviour {
       else {
 	//Debug.Log("standing near the Spartan");
 	this.GetComponent<Animation>().Stop();
-      }
+        Destroy(gameObject);
+    }
     }
 
     public void LoseHealth(float damage)
