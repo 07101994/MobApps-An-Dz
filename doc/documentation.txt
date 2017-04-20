@@ -3,6 +3,8 @@
 	Team: Aleksandr Anfilov, Lloyd Dzokoto
 		WiSe 2017
 
+Github: https://github.com/aprobinda/MobApps-An-Dz/tree/zombies
+		
   Point smartphone camera to a game field with QR-codes (markers)
 to see a 3D model of a Spartan guarding his area against a Zombie.
 
