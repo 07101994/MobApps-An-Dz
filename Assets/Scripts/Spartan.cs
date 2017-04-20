@@ -8,22 +8,18 @@ using UnityEngine;
 public class Spartan:MonoBehaviour {
   public GameObject spartan, zombie;  //renamed Target to zombie
   private Vector3 normalizeDirection;
-  private float distance, maxDistance, damage;
-  public float health;
+  private float distance, maxDistance = 0.05f, damage = 100.0f;
+  public float health = 100.0f;
   private GameObject[] enemies;
 
   void Start() {
-    maxDistance = 1.0f;
-    damage = 100;
-    health = 100;
-
     //zombie = GameObject.FindGameObjectsWithTag ("enemies");
-    zombie = GameObject.Find ("Zombie1");
+    zombie = GameObject.Find("Zombie1");
     spartan = GameObject.Find("Spartan");
 
     //normalizeDirection = (target.position - transform.position).normalized;
 
-    spartan.GetComponent<Animation>().Play("walk");
+    //spartan.GetComponent<Animation>().Play("walk");
 
     //foreach (GameObject attackTarget in enemies) {
     //transform.position = Vector3 (transform.position, this.transform.position, speed * Time.deltaTime);
@@ -59,7 +55,7 @@ public class Spartan:MonoBehaviour {
     //find distance to target
     //Todo: execute this only if a Zombie object wasn't destroyed
     distance = Vector3.Distance(transform.position, zombie.transform.position);
-    //Debug.Log (distance);
+    Debug.Log (distance);
 
     //if within damaging range
     if (distance < maxDistance) {
